@@ -138,7 +138,7 @@ public class DriverFactory {
 	  String path = System.getProperty("user.dir")+"/screenshot/"+System.currentTimeMillis()+".png";
 	  File destination = new File(path);
 	  try {
-		  FileUtil.copy(srcFile, destination);
+		  FileUtil.copyFile(srcFile, destination);
 	  }catch (IOException e) {
 		// TODO: handle exception
 		  e.printStackTrace();
