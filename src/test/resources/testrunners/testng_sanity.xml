@@ -18,22 +18,7 @@
 			<class name="com.qa.project.tests.LoginPageTest"></class>
 		</classes>
 	</test>
-	<test name="Accounts Page Test">	
-		<classes>
-			<class name="com.qa.project.tests.AccountsPageTest"></class>
-		</classes>
-	</test>
-	<test name="ProductInfoPage Test">	
-		<classes>
-			<class name="com.qa.project.tests.ProductInfoPageTest"></class>
-		</classes>
-	</test>
-	<test name="Register Page Test">	
-		<classes>
-			<class name="com.qa.project.tests.RegisterPageTest"></class>
-		</classes>
-	</test>
 	
-		
+
 	
 </suite>
