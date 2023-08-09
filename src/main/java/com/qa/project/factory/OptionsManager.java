@@ -11,6 +11,7 @@ public class OptionsManager {
 	private Properties prop;
 	private ChromeOptions co;
 	private FirefoxOptions fo;
+	private EdgeOptions eo;
 	
 
 	public OptionsManager(Properties prop) {
@@ -37,6 +38,15 @@ public class OptionsManager {
 		}
 		if(Boolean.parseBoolean(prop.getProperty("incognito").trim()))   co.addArguments("--incognito");	
 		return fo;
+	}
+	
+	public EdgeOptions getEdgeOptions() {
+		eo = new EdgeOptions();
+		if (Boolean.parseBoolean(prop.getProperty("headless").trim()))
+			eo.addArguments("--headless");
+		if (Boolean.parseBoolean(prop.getProperty("incognito").trim()))
+			eo.addArguments("--incognito");
+		return eo;
 	}
 	
 	
